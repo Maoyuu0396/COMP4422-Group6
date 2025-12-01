@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMP4422 - Pool Table Scene</title>
+    <style>
+        body { 
+            margin: 0; 
+            padding: 0; 
+            background: #1a1a1a;
+            font-family: Arial, sans-serif;
+        }
+        canvas { 
+            display: block; 
+            width: 100vw; 
+            height: 100vh;
+        }
+        #info {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            background: rgba(0,0,0,0.7);
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="info">
+        COMP4422 Group6 Project - Pool Table Scene     
+        - Use mouse to rotate, scroll to zoom     
+        - Press A and T keys to switch views    
+    </div>
+    <canvas id="webgl-canvas"></canvas>
+    
+    <!-- 添加矩阵数学库 -->
+    <script src="js/matrix.js"></script>
+    <script src="js/webgl-utils.js"></script>
+    <script src="js/camera.js"></script>
+    <script src="js/shader.js"></script>
+    <script src="js/geometry.js"></script>
+    <script src="js/materials.js"></script>
+    <script src="js/pool-table.js"></script>
+    <script src="js/pool-balls.js"></script>
+    <script src="js/pool-cue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
